@@ -1,4 +1,5 @@
 import { Component, Directive, Input, ViewChild, ElementRef } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 
 @Component({
@@ -7,7 +8,6 @@ import { Component, Directive, Input, ViewChild, ElementRef } from '@angular/cor
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Todos';
 
   @ViewChild("todoInput",{static: false}) todoInput : ElementRef;
 

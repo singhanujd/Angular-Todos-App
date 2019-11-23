@@ -1,0 +1,12 @@
+<label>
+    Name :
+    <input type="text" [formControl]="name">
+</label>
+<p>
+    {{name.value}}
+</p>
+<p [innerText]="this.name.valueChanges | async"></p>
+
+<p>
+    <button (click)="updateName()">Update Name</button>
+</p>
